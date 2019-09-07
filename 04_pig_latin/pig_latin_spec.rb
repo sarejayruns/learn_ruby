@@ -37,8 +37,9 @@ describe "#translate" do
   end
 
   it "translates two words" do
-    s = translate("eat pie")
-    expect(s).to eq("eatay iepay")
+    #
+    s = translate("beat pie eat")
+    expect(s).to eq("eatbay iepay eatay")
   end
 
   it "translates a word beginning with three consonants" do
